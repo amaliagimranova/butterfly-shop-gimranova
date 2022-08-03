@@ -1,0 +1,41 @@
+.footer {
+  background-color: $color-dark;
+  padding: 31px 0;
+}
+
+.footer-inner {
+  @include inner;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts-footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer-phone {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 400;
+  margin-right: 45px;
+}
+
+.social {
+  display: flex;
+}
+
+.social-item {
+  list-style: none;
+  margin-left: 15px;
+}
+
+.social-link {
+  width: 26px;
+  height: 26px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}

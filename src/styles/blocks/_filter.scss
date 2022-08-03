@@ -1,0 +1,22 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin: -20px 0 30px;
+}
+
+.filter-item {
+  list-style: none;
+  margin: 0 25px;
+}
+
+.filter-link {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  color: $color-dark;
+  text-transform: uppercase;
+
+  &.active {
+    color: $color-accent;
+  }
+}

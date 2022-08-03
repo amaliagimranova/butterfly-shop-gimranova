@@ -1,0 +1,11 @@
+@mixin inner {
+  max-width: 1276px; // max-width - для адаптива
+  margin: 0 auto;
+}
+
+@mixin section-title {
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+  font-weight: 400;
+}

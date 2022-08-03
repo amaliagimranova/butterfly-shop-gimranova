@@ -1,0 +1,48 @@
+.works {
+  padding: 130px 0;
+  text-align: center;
+}
+
+.works-inner {
+  @include inner;
+}
+
+.works-title {
+  @include section-title;
+  margin: 0 0 97px;
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px 115px;
+}
+
+.works-item {
+  flex-basis: 25%;
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+.works-wrap{
+  position: relative;
+}
+
+.works-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.works-item-description {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
+  padding: 15px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: $color-light;
+}
