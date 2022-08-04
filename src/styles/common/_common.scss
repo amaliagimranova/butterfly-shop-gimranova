@@ -22,6 +22,7 @@ body {
   font-size: 42px;
   line-height: 57px;
   color: $color-light;
+  margin-right: auto;
 
   @media (max-width: $tablet-max) {
     font-size: 36px;

@@ -14,14 +14,6 @@
   }
 }
 
-.contacts-footer {
-  display: flex;
-  align-items: center;
-  @media (max-width: $mobile-max) {
-    flex-direction: column;
-  }
-}
-
 .footer-phone {
   font-size: 28px;
   line-height: 38px;
