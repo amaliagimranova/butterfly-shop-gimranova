@@ -12,6 +12,10 @@
   a {
     display: block;
     padding: 33px 25px;
+
+    &:hover {
+      background-color: $color-accent;
+    }
   }
   @media (max-width: $mobile-max) {
     display: none;
