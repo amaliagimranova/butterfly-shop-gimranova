@@ -1,0 +1,23 @@
+.menu-list {
+  display: flex;
+
+  li {
+    list-style: none;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  a {
+    display: block;
+    padding: 33px 25px;
+  }
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.active-link {
+  background-color: $color-accent;
+}

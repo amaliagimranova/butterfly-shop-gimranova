@@ -1,13 +1,6 @@
 .order {
   background-color: rgba($color-dark, $alpha: 0.1);
-  padding: 130px 0;
-
-  @media (max-width: $tablet-max) {
-    padding: 120px 0;
-  }
-  @media (max-width: $mobile-max) {
-    padding: 90px 0;
-  }
+  @include section-padding;
 }
 
 .order-inner {

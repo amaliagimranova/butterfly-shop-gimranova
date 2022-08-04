@@ -1,1 +1,11 @@
-console.log('script work!');
+$(document).ready(function(){
+  $('.js-reviews-slick').slick({
+    dots: false
+  });
+
+
+
+
+
+
+});

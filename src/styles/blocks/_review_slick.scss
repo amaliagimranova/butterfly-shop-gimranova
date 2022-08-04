@@ -1,0 +1,32 @@
+.reviews-slick {
+  display: flex;
+}
+
+.reviews-slick {
+  margin: 0 30px;
+
+  .slick-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    font-size: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+
+  .slick-prev {
+    left: 0;
+    background-image: url('../images/arrow_left.svg');
+  }
+
+  .slick-next {
+    right: 0;
+    background-image: url('../images/arrow_right.svg');
+  }
+}

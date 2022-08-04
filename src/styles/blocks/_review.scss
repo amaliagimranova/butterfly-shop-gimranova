@@ -1,0 +1,41 @@
+.reviews {
+  @include section-padding;
+}
+
+.reviews-inner {
+  @include inner;
+}
+
+.reviews-title {
+  @include section-title;
+  margin-bottom: 80px;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  padding: 0 190px;
+}
+
+.review-photo {
+  margin-right: $gap;
+}
+
+.review-pic {
+  width: 304px;
+  height: 304px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-name {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+}
+
+.review-quote {
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 33px;
+}
