@@ -1,6 +1,13 @@
 .works {
   padding: 130px 0;
   text-align: center;
+
+  @media (max-width: $tablet-max) {
+    padding: 120px 0;
+  }
+  @media (max-width: $mobile-max) {
+    padding: 90px 0;
+  }
 }
 
 .works-inner {
@@ -15,13 +22,28 @@
 .works-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -10px 115px;
+  margin: 0 -10px 90px;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: $mobile-max) {
+    margin-bottom: 60px;
+  }
+
 }
 
 .works-item {
   flex-basis: 25%;
   flex-shrink: 0;
-  padding: 10px;
+  padding: $gap-half;
+
+  @media (max-width: $tablet-max) {
+    flex-basis: 50%;
+  }
+  @media (max-width: $mobile-max) {
+    flex-basis: 100%;
+  }
 }
 
 .works-wrap{

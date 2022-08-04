@@ -1,7 +1,14 @@
+//Не разобралась как сделать адаптив формы для планшетов
+
+
 .form {
   display: flex;
   align-items: center;
   margin: 0 -10px;
+
+  @media (max-width: $mobile-max) {
+    display: block;
+  }
 }
 
 .form-field {

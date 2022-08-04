@@ -11,6 +11,13 @@
   line-height: 57px;
   font-style: $font;
   cursor: pointer;
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 33px;
+    width: 278px;
+    padding: 20px 0;
+  }
 }
 
 .btn-form {

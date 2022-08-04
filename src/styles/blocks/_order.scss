@@ -1,6 +1,13 @@
 .order {
   background-color: rgba($color-dark, $alpha: 0.1);
   padding: 130px 0;
+
+  @media (max-width: $tablet-max) {
+    padding: 120px 0;
+  }
+  @media (max-width: $mobile-max) {
+    padding: 90px 0;
+  }
 }
 
 .order-inner {
@@ -15,5 +22,12 @@
   font-size: 28px;
   line-height: 38px;
   text-align: center;
-  margin: 35px 0 90px;
+  margin: 40px 0 90px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 20px 0 60px;
+  }
 }
+
