@@ -9,6 +9,13 @@
 .contacts-title {
   @include section-title;
   margin-bottom: 80px;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 70px;
+  }
+  @media (max-width: $mobile-max) {
+    margin-bottom: 50px;
+  }
 }
 
 .contact-info {
@@ -17,8 +24,24 @@
   font-size: 24px;
   line-height: 33px;
 
+  @media (max-width: $tablet-max) {
+    width: 33.33%;
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @media (max-width: $mobile-max) {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
   p {
     margin-bottom: 20px;
+
+    @media (max-width: $mobile-max) {
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -26,8 +49,22 @@
   width: 58.33%;
   filter: drop-shadow(0px 0px 18px rgba(212, 98, 64, 0.1));
 
+  @media (max-width: $tablet-max) {
+    width: 66.66%;
+  }
+  @media (max-width: $mobile-max) {
+    width: 100%;
+  }
+
   iframe {
     width: 100%;
     height: 420px;
+
+    @media (max-width: $tablet-max) {
+      height: 300px;
+    }
+    @media (max-width: $mobile-max) {
+      height: 340px;
+    }
   }
 }

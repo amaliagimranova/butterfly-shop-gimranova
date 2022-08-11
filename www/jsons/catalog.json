@@ -1,0 +1,60 @@
+{
+  "catalog": [
+    {
+      "data-type": "strict",
+      "link": "#",
+      "imageURL": "images/w_bf_classic.png",
+      "imageTitle": "Бабочка такая",
+      "description": "Бабочка такая"
+    },
+    {
+      "data-type": "strict",
+      "link": "#",
+      "imageURL": "images/w_bf_box.png",
+      "imageTitle": "Бабочка растакая",
+      "description": "Бабочка растакая"
+    },
+    {
+      "data-type": "adults",
+      "link": "#",
+      "imageURL": "images/w_bf_eventman.png",
+      "imageTitle": "Бабочка сякая",
+      "description": "Бабочка сяакая"
+    },
+    {
+      "data-type": "animals",
+      "link": "#",
+      "imageURL": "images/w_bf_cat.png",
+      "imageTitle": "Кривая",
+      "description": "Кривая"
+    },
+    {
+      "data-type": "strict",
+      "link": "#",
+      "imageURL": "images/w_bf_classic.png",
+      "imageTitle": "Бабочка такая",
+      "description": "Бабочка такая"
+    },
+    {
+      "data-type": "strict",
+      "link": "#",
+      "imageURL": "images/w_bf_box.png",
+      "imageTitle": "Бабочка растакая",
+      "description": "Бабочка растакая"
+    },
+    {
+      "data-type": "adults",
+      "link": "#",
+      "imageURL": "images/w_bf_eventman.png",
+      "imageTitle": "Бабочка сякая",
+      "description": "Бабочка сяакая"
+    },
+    {
+      "data-type": "animals",
+      "link": "#",
+      "imageURL": "images/w_bf_cat.png",
+      "imageTitle": "Кривая",
+      "description": "Кривая"
+    }
+  ]
+}
