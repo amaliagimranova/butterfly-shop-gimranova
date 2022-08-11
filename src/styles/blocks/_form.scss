@@ -1,8 +1,13 @@
-//Не разобралась как сделать адаптив формы для планшетов
 
+
+//картинкам дисплей блок
+
+
+//работы поменять на каталог, переписать названия
 
 .form {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   margin: 0 -10px;
 
@@ -13,7 +18,22 @@
 
 .form-field {
   flex-basis: 33.33%;
-  margin: 0 10px;
+  padding: 0 10px;
+
+  @media (max-width: $tablet-max) {
+    flex-basis: 100%;
+  }
+}
+
+.form-field-half {
+  @media (max-width: $tablet-max) {
+    flex-basis: 50%;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding-bottom: 30px;
+  }
 }
 
 .form-input {

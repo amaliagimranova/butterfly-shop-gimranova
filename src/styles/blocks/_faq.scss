@@ -1,0 +1,47 @@
+.faq {
+  @include section-padding;
+}
+
+.faq-inner {
+  @include inner;
+}
+
+.faq-title {
+  @include section-title;
+  margin-bottom: 80px;
+}
+
+.faq-accordion {
+  margin-bottom: 40px;
+  border: solid rgba(255, 45, 45, 0.2) 1px;
+  position: relative;
+}
+
+.faq-btn {
+  display: block;
+  padding: 25px 30px;
+  font-family: $font;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 49px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: $color-dark;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 25px 30px ;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.faq-btn::after {
+  content: '';
+  position: absolute;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/status_plus.svg);
+}

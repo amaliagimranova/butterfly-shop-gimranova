@@ -15,6 +15,13 @@
   display: flex;
   align-items: center;
   padding: 0 190px;
+
+  @media (max-width: $tablet-max) {
+    padding: 0 65px;
+  }
+  @media (max-width: $mobile-max) {
+    display: block;
+  }
 }
 
 .review-photo {
@@ -26,16 +33,31 @@
   height: 304px;
   border-radius: 50%;
   object-fit: cover;
+
+  @media (max-width: $tablet-max) {
+    width: 236px;
+    height: 236px;
+  }
 }
 
 .review-name {
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
+
+  @media (max-width: $tablet-max) {
+    font-size: 36px;
+    line-height: 49px;
+  }
 }
 
 .review-quote {
   margin-top: 40px;
   font-size: 24px;
   line-height: 33px;
+
+  @media (max-width: $tablet-max) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }

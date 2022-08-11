@@ -1,0 +1,33 @@
+.contacts {
+  @include section-padding;
+}
+
+.contacts-inner {
+  @include inner;
+}
+
+.contacts-title {
+  @include section-title;
+  margin-bottom: 80px;
+}
+
+.contact-info {
+  width: 41.66%;
+  padding-left: 105px;
+  font-size: 24px;
+  line-height: 33px;
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.map-wrap {
+  width: 58.33%;
+  filter: drop-shadow(0px 0px 18px rgba(212, 98, 64, 0.1));
+
+  iframe {
+    width: 100%;
+    height: 420px;
+  }
+}

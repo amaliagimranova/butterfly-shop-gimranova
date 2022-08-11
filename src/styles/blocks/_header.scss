@@ -26,11 +26,4 @@
   }
 }
 
-.header-burger {
-  display: none;
-  margin-right: 16px;
 
-  @media (max-width: $mobile-max) {
-    display: block;
-  }
-}

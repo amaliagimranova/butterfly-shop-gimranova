@@ -27,3 +27,44 @@
   line-height: 34px;
   font-family: $font;
 }
+
+// Menu burger
+.header-burger {
+  position: relative;
+  width: 30px;
+  height: 30px;
+
+  span,
+  span::before,
+  span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5px;
+    width: 100%;
+    height: 3px;
+    background-color: $color-light;
+  }
+  span::before,
+  span::after {
+    content: '';
+    transition: .2s;
+  }
+  span::before{
+    transform: translateY(-13px);
+  }
+  span::after {
+    transform: translateY(13px);
+  }
+
+  &.open {
+    span {
+      height: 0;
+    }
+    span::before{
+      transform: rotate(45deg);
+    }
+    span::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
