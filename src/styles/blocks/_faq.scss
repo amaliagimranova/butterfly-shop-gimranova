@@ -9,16 +9,28 @@
 .faq-title {
   @include section-title;
   margin-bottom: 80px;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 70px;
+  }
+  @media (max-width: $mobile-max) {
+    margin-bottom: 50px;
+  }
 }
 
 .faq-accordion {
   margin-bottom: 40px;
   border: solid rgba(255, 45, 45, 0.2) 1px;
   position: relative;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 20px;
+  }
 }
 
 .faq-btn {
   display: block;
+  text-align: start;
   padding: 25px 30px;
   font-family: $font;
   font-weight: 300;
@@ -27,6 +39,16 @@
   background-color: rgba(0, 0, 0, 0);
   border: none;
   color: $color-dark;
+
+  @media (max-width: $tablet-max) {
+    padding: 15px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+  @media (max-width: $mobile-max) {
+    font-size: 20px;
+    line-height: 27px;
+  }
 }
 
 .faq-answer {
@@ -35,13 +57,36 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 25px;
+
+  @media (max-width: $tablet-max) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  @media (max-width: $mobile-max) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .faq-btn::after {
   content: '';
   position: absolute;
+  top: 30px;
   right: 30px;
   width: 40px;
   height: 40px;
   background-image: url(../images/status_plus.svg);
+  background-size: contain;
+
+  @media (max-width: $tablet-max) {
+    top: 20px;
+    right: 15px;
+  }
+  @media (max-width: $mobile-max) {
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+  }
 }
+
