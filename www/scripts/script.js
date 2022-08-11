@@ -63,4 +63,56 @@ $(document).ready(function(){
     }
     prevStatus = this;
   })
+
+  // AJAX Catalog // что-то не работает, вернуться, перепроверить
+  $('.js-btn-more').on('click', function(e) {
+    e.preventDefault();
+
+    $('.js-btn-more').attr('disabled', true);
+    $('.js-btn-more').text('...');
+
+    $.ajax({
+      type: 'POST',
+      url: '../jsons/catalog.json',
+      data: 'count = 4',
+      success: function (responce) {
+        if (!responce.isShowMore) {
+          $('.js-btn-more').hide();
+        }
+
+        let html = createHtml(responce.catalog);
+        addToPage(html);
+
+        $('.js-btn-more').removeAttr('disabled');
+        $('.js-btn-more').text('Больше бабочек');
+      },
+      erroe: function() {
+        console.log('error');
+      }
+    });
+
+    function createHtml(dataArray) {
+      let htmlString = '';
+
+      dataArray.forEach(function(item) {
+        htmlString = htmlString + 
+        `<div class="catalog-item js-catalog-item"  data-type="${item.data-type}">
+          <div class="catalog-item-wrap">
+            <a href="${item.link}">
+              <img class="catalog-img" src="${item.imageURL}" alt="${item.imageAlt}">
+              <p class="catalog-item-description">${item.description}</p>
+            </a>
+          </div>
+        </div>`
+      });
+
+      return htmlString;
+    };
+
+    function addToPage(string) {
+      $('.js-catalog-list').append(string);
+    }
+  });
+
+
 });
