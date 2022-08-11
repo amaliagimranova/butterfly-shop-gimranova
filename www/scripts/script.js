@@ -7,6 +7,31 @@ $(document).ready(function(){
     $('.js-menu').slideToggle();
   });
 
+  //Сортировка в каталоге
+  $('.js-filter-link').on('click', function(e) {
+    e.preventDefault();
+    let filter = $(this).data('filter');
+
+    $('.js-filter-link').removeClass('active');
+    $(this).addClass('active');
+
+    if (filter === 'all') {
+      $('.js-catalog-item').show();
+      return;
+    }
+
+    $('.js-catalog-item').each(function() {
+      let type = $(this).data('type');
+
+      if (filter === type) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+
+  });
+
   // Галерея отзывов
   $('.js-reviews-slick').slick({
     dots: false
